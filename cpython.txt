@@ -1,0 +1,13 @@
+1. Python Source code.
+    Human readable python instructions.
+2. Tokenization, Parsing, and syntax checking.
+    Source Characters -> tokens -> Abstract SYntax Tree(AST)
+3. CPython compiler.
+    Converts the AST into a code object containing CPython bytencode
+4. CPython Bytecode Interpreter.
+    The evaluation loop, commonly described pedagogically as the PYthon Virtual Machine(PVM),
+    executes bytecode instructions within execution frames.
+5. Program Outcome.
+    Produces console output, a returned value, file or network activity, or another intended action.
+
+Python bytencode is not CPU machine code.
