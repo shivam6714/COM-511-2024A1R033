@@ -1,0 +1,63 @@
+"""
+Write a Python program to allocate seats to a group in a single row of a cinema hall. First, input the total number of seats n. Then enter the status of each seat:
+
+0 means the seat is available.
+1 means the seat is already booked.
+
+Next, input the number of people in the group. The program must find the first consecutive block of available seats that can accommodate the entire group. If such seats are found:
+
+Book all those seats by changing their status from 0 to 1.
+Display the allocated seat numbers as a tuple.
+Display the updated list of seat statuses.
+
+If no consecutive block is available, display Consecutive seats not available and print the original seat list without any changes.
+
+Conditions
+Seat numbering starts from 1.
+The group size must be at least 1 and cannot exceed n.
+All group members must be allotted seats together in consecutive order.
+If more than one suitable block is available, allocate the first block from the left.
+Input seat status must be either 0 or 1.
+Example
+
+Input:
+
+Enter number of seats: 9
+Seat status: [1, 0, 0, 1, 0, 0, 0, 0, 1]
+Enter group size: 3
+
+Expected Output:
+
+Allocated seats: (5, 6, 7)
+Updated seats: [1, 0, 0, 1, 1, 1, 1, 0, 1]
+"""
+
+n=int(input("Number of seats: "))
+
+arr = list(map(int,input("Enter seat status:").split()))
+
+k = int(input("Enter group size: "))
+
+count=0
+allocated=False
+
+for r in range(n):
+    if arr[r]==0:
+        count+=1
+    if arr[r]==1:
+        count=0
+    if count==k:
+        seats=()
+        for l in range(r-k+1,r+1):
+            arr[l]=1
+            seats+=(l+1,)
+        allocated=True
+        break
+
+if allocated:
+    print("Allocated seats:",seats)
+
+else:
+    print("Consecutive seats not available")
+
+print("Updated seats:",arr)

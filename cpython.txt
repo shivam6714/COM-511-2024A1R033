@@ -11,3 +11,17 @@
     Produces console output, a returned value, file or network activity, or another intended action.
 
 Python bytencode is not CPU machine code.
+
+
+Lab 5 : Write a program to perform searching activity using linear search and binary search
+Lab 6 : Write a program to reverse every kth row in a matrix
+Lab 7 : Write a program to create records of n students. Store each student record as a dictionary 
+        containing roll number, name, branch and marks. Store all the records in a list and search for a student
+        using roll number. (Roll numbers msut be unique)
+Lab 8 : Create a database using lists and tuples. Each student record must contain roll number, name, branch
+        and cgpa. Store each records as a tuple inside a list. Display all records and search for a student using roll number
+
+        conditions:
+        - Each record should be stored as tuple
+        - The complete database should be stored as a list
+        - Roll numbers must be unique
