@@ -12,5 +12,5 @@ class Student:
         print("Name:",self.name)
         print("Roll Number:",self.roll_number)
 
-student1= Student("Sher Khan", 25)
+student1= Student("Shivam", 25)
 student1.display_details()
