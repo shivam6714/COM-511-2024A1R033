@@ -28,7 +28,7 @@ class BankAccount:
 
 acc= BankAccount("hi",8008)
 acc.display()
-acc.deposit(1900)
-acc.withdraw(8181)
-acc.withdraw(2000)
+acc.deposit(300)
+acc.withdraw(7000)
+acc.withdraw(550)
 acc.display()
